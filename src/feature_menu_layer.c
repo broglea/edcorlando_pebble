@@ -208,8 +208,7 @@ static const time_t unix_times_friday[] = {
   1415372160,
   1415372400,
   1415374800,
-  //1415375580,
-  1415364302,
+  1415375580,
   1415376000,
   1415379000,
   1415379600,
@@ -336,7 +335,7 @@ static void days_menu_draw_row_callback(GContext* ctx, const Layer *cell_layer, 
 int find_closest_time(int day){
   time_t timer;
   time(&timer);
-  app_log(APP_LOG_LEVEL_INFO, "feature_menu_layer.c", 340, "Time is: %ld\n", (long)timer);
+  //app_log(APP_LOG_LEVEL_INFO, "feature_menu_layer.c", 340, "Time is: %ld\n", (long)timer);
   double difference, temp;
   int result = 0, i;
   if(day == 0){
